@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/andrey/Development/ScaledDecorator/ScaledDecorator.csproj": {}
+  },
+  "projects": {
+    "/home/andrey/Development/ScaledDecorator/ScaledDecorator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/andrey/Development/ScaledDecorator/ScaledDecorator.csproj",
+        "projectName": "ScaledDecorator",
+        "projectPath": "/home/andrey/Development/ScaledDecorator/ScaledDecorator.csproj",
+        "packagesPath": "/home/andrey/.nuget/packages/",
+        "outputPath": "/home/andrey/Development/ScaledDecorator/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/andrey/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net4.8"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net4.8",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net4.8",
+          "dependencies": {
+            "KSPBuildTools": {
+              "target": "Package",
+              "version": "[0.0.3, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

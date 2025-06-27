@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net4.8</TargetFramework>
+    <BinariesOutputRelativePath>ScaledDecorator</BinariesOutputRelativePath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="KSPBuildTools" Version="0.0.3" />
+  </ItemGroup>
+
+</Project>
