@@ -20,8 +20,9 @@ More detailed info:
 | ------------- | ------------- |
 | assetBundle  | Filepath to the AssetBundle you wish to load. The path begins at GameData. Below this table are instructions on how to export an AssetBundle from Unity. |
 | prefab  | The name of the GameObject within the AssetBundle. This is because AssetBundles load several things (textures, materials, meshes, prefabs) so you have to specify the name of the thing you wish to Instantiate (in this case it should be the name of the prefab)  |
-| localPosition  | The position relative to the parent body.   |
-| rotatesWithParent  | Content Cell  |
-| rotation  | Content Cell  |
-| rotationSpeed  | Content Cell  |
-| parent  | Content Cell  |
+| localPosition  | The position relative to the parent body. |
+| rotatesWithParent  | If true, rotation will be locked to rotate with the parent planet. Otherwise it will rotate independently. |
+| rotation  | The initial rotation of the object. If rotatesWithParent is true, then the object will be rotated locally within the parent. Otherwise it will be rotated globally. |
+| rotationSpeed  | The degrees per secondt that the object rotates. Only functions if rotatesWithParent is false. |
+| parent  | The name of celestial body that the object is parented to. |
+
