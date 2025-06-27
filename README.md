@@ -31,6 +31,10 @@ More detailed info:
 * The object is parented in: ``DontDestroyOnLoad/scaledSpace/[parent]/``
 * Allows you to edit the position/scale/rotation within KSP for fine tuning (since Unity's coordinates are largely arbitrary)
 
-### "Flare Export" https://github.com/Kopernicus/flare-export
+### "Flare Export:" https://github.com/Kopernicus/flare-export
 * The name is a bit reductive, as this unity project can export any kind of AssetBundle. Not just lens flares.
 * To export your GameObject, save it as a prefab by dragging it into the Assets folder, then right click the newly made prefab and click "Build Lens Flare Object". Remember to give it a meaningful name and move it into wherever you want within your mod.
+
+## Example uses:
+### Particle effects such as jets and planetary trails:
+<img src=https://github.com/user-attachments/assets/ca213353-6d09-4563-aaf1-8cda1c8df3d9 width=50% height=50%>
