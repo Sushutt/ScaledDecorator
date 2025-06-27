@@ -18,9 +18,9 @@ ScaledDecoratorObject
 More detailed info:
 | Value | Description |
 | ------------- | ------------- |
-| assetBundle  | Content Cell  |
-| prefab  | Content Cell  |
-| localPosition  | Content Cell  |
+| assetBundle  | Filepath to the AssetBundle you wish to load. The path begins at GameData. Below this table are instructions on how to export an AssetBundle from Unity. |
+| prefab  | The name of the GameObject within the AssetBundle. This is because AssetBundles load several things (textures, materials, meshes, prefabs) so you have to specify the name of the thing you wish to Instantiate (in this case it should be the name of the prefab)  |
+| localPosition  | The position relative to the parent body.   |
 | rotatesWithParent  | Content Cell  |
 | rotation  | Content Cell  |
 | rotationSpeed  | Content Cell  |
