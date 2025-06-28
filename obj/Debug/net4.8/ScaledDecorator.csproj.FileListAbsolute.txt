@@ -7,3 +7,4 @@
 /home/andrey/Development/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.csproj.CoreCompileInputs.cache
 /home/andrey/Development/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.dll
 /home/andrey/Development/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.pdb
+/home/andrey/Development/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.sourcelink.json
