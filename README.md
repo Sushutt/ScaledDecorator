@@ -17,16 +17,16 @@ ScaledDecoratorObject
 }
 ```
 More detailed info:
-Required | Value | Description |
+| Default Value | Value | Description |
 | ------------- | ------------- | ------------- |
-| Yes | assetBundle  | Filepath to the AssetBundle you wish to load. The path begins at GameData. Below this table are instructions on how to export an AssetBundle from Unity. |
-| Yes | prefab  | The name of the GameObject within the AssetBundle. This is because AssetBundles load several things (textures, materials, meshes, prefabs) so you have to specify the name of the thing you wish to Instantiate (in this case it should be the name of the prefab)  |
-| Yes | parent  | The name of celestial body that the object is parented to. |
-| No | rotatesWithParent  | If true, rotation will be locked to rotate with the parent planet. Otherwise it will rotate independently. |
-| No | rotation  | The initial rotation of the object. If rotatesWithParent is true, then the object will be rotated locally within the parent. Otherwise it will be rotated globally. |
-| No | rotationSpeed  | The degrees per second that the object rotates. Only functions if rotatesWithParent is false. |
-| No | localPosition  | The position relative to the parent body. |
-| No | scale | The scale multiplier, scale should generally be set within the prefab but this can be used if that cannot be done. |
+| REQUIRED | assetBundle  | Filepath to the AssetBundle you wish to load. The path begins at GameData. Below this table are instructions on how to export an AssetBundle from Unity. |
+| REQUIRED | prefab  | The name of the GameObject within the AssetBundle. This is because AssetBundles load several things (textures, materials, meshes, prefabs) so you have to specify the name of the thing you wish to Instantiate (in this case it should be the name of the prefab)  |
+| REQUIRED | parent  | The name of celestial body that the object is parented to. |
+| true | rotatesWithParent  | If true, rotation will be locked to rotate with the parent planet. Otherwise it will rotate independently. |
+| (0,0,0) | rotation  | The initial rotation of the object. If rotatesWithParent is true, then the object will be rotated locally within the parent. Otherwise it will be rotated globally. |
+| (0,0,0) | rotationSpeed  | The degrees per second that the object rotates. Only functions if rotatesWithParent is false. |
+| (0,0,0) | localPosition  | The position relative to the parent body. |
+| (1,1,1) | scale | The scale multiplier, scale should generally be set within the prefab but this can be used if that cannot be done. |
 
 ## Recommended tools:
 ### Unity Explorer: https://github.com/KSPModdingLibs/UnityExplorerKSP/releases
