@@ -35,6 +35,16 @@ More detailed info:
 * The name is a bit reductive, as this unity project can export any kind of AssetBundle. Not just lens flares.
 * To export your GameObject, save it as a prefab by dragging it into the Assets folder, then right click the newly made prefab and click "Build Lens Flare Object". Remember to give it a meaningful name and move it into wherever you want within your mod.
 
+## How to make an AssetBundle (with pictures):
+1. Firstly, install Unity. I don't know if the exporter works well on later versions but I recommend Unity 2019.4.16f1 https://unity.com/releases/editor/whats-new/2019.4.16
+2. Then, go to https://github.com/Kopernicus/flare-export, click on the green "<> Code" button, and then click "Download as Zip" <br> <img src=https://github.com/user-attachments/assets/a316b033-089f-4938-8404-cf4b891b01dd width=50% height=50%>
+4. Unzip the flare export project anywhere you want, then go into Unity Hub and click "Add" then "Add Project From Disk" and select the folder you just unzipped. <br> <img src=https://github.com/user-attachments/assets/5d4b5425-d17b-4478-b48a-a2e3abd53a48 width=50% height=50%>
+5. Load the Unity Project.
+6. Once you're in, create whatever object you wish. This a part that the guide doesn't touch on since it's a more general Unity thing. If you want particles, then create an empty GameObject and create another particle system inside it. Consult the Unity documentation if you want to know more about particle configuration. MAKE SURE TO GIVE YOUR OBJECT A UNIQUE NAME! <br> <img src=https://github.com/user-attachments/assets/45a6edc3-827e-4cf8-a844-52c2fcc46052 width=50% height=50%>
+7. Once you have what you want, drag the GameObject into the Assets folder to save it as a prefab. It's recommended to make another folder within Assets (I named this one "sparkles") in order to keep it organized. <br> <img src=https://github.com/user-attachments/assets/a68252d2-375d-4380-9a92-9c80c27e46ec width=50% height=50%>
+
+
+
 
 ## Example uses:
 ### Particle effects such as jets and comet trails: (The black hole lensing effect is from Singularity!)
