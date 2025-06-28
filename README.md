@@ -2,7 +2,7 @@
 A KSP plugin that loads AssetBundles into KSP's ScaledSpace. Can be used to display particles and models at planetary scale.
 
 ## Config Format:
-Put this into the a .cfg in GameData
+Put this into a .cfg in GameData. This does NOT go into a planet's Kopernicus Body node!
 ```C#
 ScaledDecoratorObject
 {
