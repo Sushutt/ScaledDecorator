@@ -35,8 +35,10 @@ More detailed info:
 * The name is a bit reductive, as this unity project can export any kind of AssetBundle. Not just lens flares.
 * To export your GameObject, save it as a prefab by dragging it into the Assets folder, then right click the newly made prefab and click "Build Lens Flare Object". Remember to give it a meaningful name and move it into wherever you want within your mod.
 
+
 ## Example uses:
 ### Particle effects such as jets and comet trails: (The black hole lensing effect is from Singularity!)
-<img src=https://github.com/user-attachments/assets/ca213353-6d09-4563-aaf1-8cda1c8df3d9 width=49% height=49%> <img src=https://github.com/user-attachments/assets/668d9ac6-ae26-41c3-b3b4-74b73a839f76 width=49% height=49%>
+<img src=https://github.com/user-attachments/assets/ca213353-6d09-4563-aaf1-8cda1c8df3d9 width=100% height=100%> <img src=https://github.com/user-attachments/assets/668d9ac6-ae26-41c3-b3b4-74b73a839f76 width=100% height=100%> <img src=https://github.com/user-attachments/assets/cf4633ac-4206-42fa-ab12-3b773425f1bf width=100% height=100%>
+
 ### Also importing 3d models, but I haven't gotten any examples that don't spoil an event I'm doing yet..
 
