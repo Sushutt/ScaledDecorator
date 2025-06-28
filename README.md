@@ -40,11 +40,13 @@ More detailed info:
 2. Then, go to https://github.com/Kopernicus/flare-export, click on the green "<> Code" button, and then click "Download as Zip" <br> <img src=https://github.com/user-attachments/assets/a316b033-089f-4938-8404-cf4b891b01dd width=50% height=50%>
 4. Unzip the flare export project anywhere you want, then go into Unity Hub and click "Add" then "Add Project From Disk" and select the folder you just unzipped. <br> <img src=https://github.com/user-attachments/assets/5d4b5425-d17b-4478-b48a-a2e3abd53a48 width=50% height=50%>
 5. Load the Unity Project.
-6. Once you're in, create whatever object you wish. This a part that the guide doesn't touch on since it's a more general Unity thing. If you want particles, then create an empty GameObject and create another particle system inside it. Consult the Unity documentation if you want to know more about particle configuration. MAKE SURE TO GIVE YOUR OBJECT A UNIQUE NAME! <br> <img src=https://github.com/user-attachments/assets/45a6edc3-827e-4cf8-a844-52c2fcc46052 width=50% height=50%>
-7. Once you have what you want, drag the GameObject into the Assets folder to save it as a prefab. It's recommended to make another folder within Assets (I named this one "sparkles") in order to keep it organized. <br> <img src=https://github.com/user-attachments/assets/a68252d2-375d-4380-9a92-9c80c27e46ec width=50% height=50%>
-
-
-
+6. Once you're in, create whatever object you wish. This a part that the guide doesn't touch on since it's a more general Unity thing. If you want particles, then create an empty GameObject and create another particle system inside it. Consult the Unity documentation if you want to know more about particle configuration. MAKE SURE TO GIVE YOUR OBJECT A UNIQUE NAME! <br> <img src=https://github.com/user-attachments/assets/e7bb2747-0660-4b64-b825-70cf965fb1c9 width=50% height=50%>
+7. Once you have what you want, drag the GameObject into the Assets folder to save it as a prefab. It's recommended to make another folder within Assets (I named this one "sparkles") in order to keep it organized. <br> <img src=https://github.com/user-attachments/assets/51268432-38ff-4f13-89cf-8d4293198cab width=50% height=50%>
+8. Double click the prefab you just made. For easier editing, it's recommended to also save the particles within the prefab as another prefab. This will allow you to rescale the instantiated prefab within the scene without scaling the original particle prefab you just saved.
+9. Change the scale of the objects within the prefab. Don't change the scale of the root object however as KSP automatically rescales that. There generally isn't a clear way to determine the final scale of the object, rather it's just a wild guess. 1000 is a good guess for Kerbin-scale stuff. <br> <img src=https://github.com/user-attachments/assets/1692b20d-85fc-485a-b3b7-6402de6a9aee>
+10. Once you're done, right click on your prefab and you should find a buttion on the bottom that says "Build Lens Flare Object", click that and save it. <br> <img src=https://github.com/user-attachments/assets/d7390121-90f8-48fd-9ced-a2dcdbc1e331 width=50% height=50%>
+11. Create a config (info about that above) for it. The assetBundle parameter should be the path to your file that you saved and the prefab parameter should be the name of the prefab that you saved.
+12. (Optional) Go into KSP and fine-tune the scale of it using Unity Explorer (found in ``DontDestroyOnLoad/scaledSpace/[parent]/``). Them update the scale of the objects within Unity once you've found a scale you like.
 
 ## Example uses:
 ### Particle effects such as jets and comet trails: (The black hole lensing effect is from Singularity!)
