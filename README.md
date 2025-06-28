@@ -8,11 +8,12 @@ ScaledDecoratorObject
 {
     assetBundle = Path/To/AssetBundle.unity3d // Path to the AssetBundle. Below are instructions on making one
     prefab = NAMEOFPREFAB // Name of the GameObject you want to load
-    localPosition = 0,0,0 // Position relative to the parent body
+    parent = Sun // Name of the parent body
     rotatesWithParent = false // Whether or not the prefab rotates with the parent body
     rotation = 0,0,0 // Rotation of the prefab
     rotationSpeed = 0,0,0 // Rotation direction of the prefab
-    parent = Sun // Name of the parent body
+    localPosition = 0,0,0 // Position relative to the parent body
+    scale = 1,1,1 // Scale multiplier of the prefab
 }
 ```
 More detailed info:
@@ -20,11 +21,12 @@ More detailed info:
 | ------------- | ------------- |
 | assetBundle  | Filepath to the AssetBundle you wish to load. The path begins at GameData. Below this table are instructions on how to export an AssetBundle from Unity. |
 | prefab  | The name of the GameObject within the AssetBundle. This is because AssetBundles load several things (textures, materials, meshes, prefabs) so you have to specify the name of the thing you wish to Instantiate (in this case it should be the name of the prefab)  |
-| localPosition  | The position relative to the parent body. |
+| parent  | The name of celestial body that the object is parented to. |
 | rotatesWithParent  | If true, rotation will be locked to rotate with the parent planet. Otherwise it will rotate independently. |
 | rotation  | The initial rotation of the object. If rotatesWithParent is true, then the object will be rotated locally within the parent. Otherwise it will be rotated globally. |
 | rotationSpeed  | The degrees per second that the object rotates. Only functions if rotatesWithParent is false. |
-| parent  | The name of celestial body that the object is parented to. |
+| localPosition  | The position relative to the parent body. |
+| scale | The scale multiplier, scale should generally be set within the prefab but this can be used if that cannot be done. |
 
 ## Recommended tools:
 ### Unity Explorer: https://github.com/KSPModdingLibs/UnityExplorerKSP/releases
