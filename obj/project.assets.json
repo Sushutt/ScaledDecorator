@@ -465,19 +465,19 @@
     ]
   },
   "packageFolders": {
-    "/home/andrey/.nuget/packages/": {}
+    "/home/debian/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/andrey/Development/ScaledDecorator/ScaledDecorator.csproj",
+      "projectUniqueName": "/home/debian/Development/Mods/KSP/ScaledDecorator/ScaledDecorator.csproj",
       "projectName": "ScaledDecorator",
-      "projectPath": "/home/andrey/Development/ScaledDecorator/ScaledDecorator.csproj",
-      "packagesPath": "/home/andrey/.nuget/packages/",
-      "outputPath": "/home/andrey/Development/ScaledDecorator/obj/",
+      "projectPath": "/home/debian/Development/Mods/KSP/ScaledDecorator/ScaledDecorator.csproj",
+      "packagesPath": "/home/debian/.nuget/packages/",
+      "outputPath": "/home/debian/Development/Mods/KSP/ScaledDecorator/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/andrey/.nuget/NuGet/NuGet.Config"
+        "/home/debian/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net4.8"
@@ -518,7 +518,7 @@
             "autoReferenced": true
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.301/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.304/RuntimeIdentifierGraph.json"
       }
     }
   }

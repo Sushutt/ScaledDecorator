@@ -8,3 +8,13 @@
 /home/andrey/Development/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.dll
 /home/andrey/Development/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.pdb
 /home/andrey/Development/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.sourcelink.json
+/home/debian/Development/Mods/KSP/ScaledDecorator/bin/Debug/net4.8/ScaledDecorator.dll
+/home/debian/Development/Mods/KSP/ScaledDecorator/bin/Debug/net4.8/ScaledDecorator.pdb
+/home/debian/Development/Mods/KSP/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.csproj.AssemblyReference.cache
+/home/debian/Development/Mods/KSP/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.GeneratedMSBuildEditorConfig.editorconfig
+/home/debian/Development/Mods/KSP/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.AssemblyInfoInputs.cache
+/home/debian/Development/Mods/KSP/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.AssemblyInfo.cs
+/home/debian/Development/Mods/KSP/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.csproj.CoreCompileInputs.cache
+/home/debian/Development/Mods/KSP/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.sourcelink.json
+/home/debian/Development/Mods/KSP/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.dll
+/home/debian/Development/Mods/KSP/ScaledDecorator/obj/Debug/net4.8/ScaledDecorator.pdb

@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = ScaledDecorator
-build_property.ProjectDir = /home/andrey/Development/ScaledDecorator/
+build_property.ProjectDir = /home/debian/Development/Mods/KSP/ScaledDecorator/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
