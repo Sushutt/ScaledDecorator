@@ -44,8 +44,6 @@ The third one only matters if you run an axial-tilt mod such as Tilt'Em. Without
 planet's pole is the world up axis, so `tiltRelativeToParent` does exactly nothing and is safe
 to leave set to true.
 
-The pole is read off the parent body's own transform, so this works with any tilt mod (or none).
-
 ## Recommended tools:
 ### Unity Explorer: https://github.com/KSPModdingLibs/UnityExplorerKSP/releases
 * The object is parented in: ``DontDestroyOnLoad/scaledSpace/[parent]/``
