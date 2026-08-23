@@ -20,6 +20,8 @@
           "net4.8"
         ],
         "sources": {
+          "/home/debian/Godot471NugetSource": {},
+          "/home/debian/MyLocalNugetSource": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +57,7 @@
               "autoReferenced": true
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.304/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.317/RuntimeIdentifierGraph.json"
         }
       }
     }
