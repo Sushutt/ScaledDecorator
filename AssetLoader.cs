@@ -15,7 +15,7 @@ namespace ScaledDecorator
 
         public void Start()
         {
-            Debug.Log($"{classTag} Starting ScaledDecorator..");
+            Debug.Log($"{classTag} Starting ScaledDecorator.. (Version 1.3)");
             GraphicsDeviceType deviceType = SystemInfo.graphicsDeviceType;
             Debug.Log($"{classTag} Active graphics device type: {deviceType}");
 
