@@ -37,7 +37,7 @@ More detailed info:
 | rotatesWithParent | tiltRelativeToParent | The object's rotation is measured from... |
 | ----------------- | -------------------- | ----------------------------------------- |
 | `true` | *(ignored)* | The parent's full orientation, its pole **and** its spin. The object turns with the planet. |
-| `false` | `false` *(default)* | The world axes. Unchanged from every previous version. |
+| `false` | `false` *(default)* | The world axes. |
 | `false` | `true` | The parent's **pole**, but not its spin. |
 
 The third one only matters if you run an axial-tilt mod such as Tilt'Em. Without one every
