@@ -1,5 +1,0 @@
-compat add --gamedir "/home/debian/Games/KSP/Linux/KSP_linux" 1.12
-compat add --gamedir "/home/debian/Games/KSP/Linux/KSP_linux" 1.11
-compat add --gamedir "/home/debian/Games/KSP/Linux/KSP_linux" 1.10
-compat add --gamedir "/home/debian/Games/KSP/Linux/KSP_linux" 1.9
-compat add --gamedir "/home/debian/Games/KSP/Linux/KSP_linux" 1.8
