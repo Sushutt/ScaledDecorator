@@ -40,7 +40,11 @@ namespace ScaledDecorator
                 asset.planetName = config.GetValue("parent");
 
                 asset.rotatesWithParent = config.GetValue("rotatesWithParent") == null || config.GetValue("rotatesWithParent").ToLower() == "true";
-                asset.rotation = config.GetValue("rotation") != null ? 
+
+                asset.tiltRelativeToParent = config.GetValue("tiltRelativeToParent") != null
+                    && config.GetValue("tiltRelativeToParent").ToLower() == "true";
+
+                asset.rotation = config.GetValue("rotation") != null ?
                     ConfigNode.ParseVector3(config.GetValue("rotation")) : Vector3.zero;
 
                 asset.rotationSpeed = config.GetValue("rotationSpeed") != null ? 
@@ -79,6 +83,7 @@ namespace ScaledDecorator
         public string prefabName; // Name of the prefab that we want to instantiate
         public string planetName;
         public bool rotatesWithParent;
+        public bool tiltRelativeToParent; // Orient against the parent's pole instead of the world axes
         public Vector3 rotation; // Initial rotation
         public Vector3 rotationSpeed; // Degrees per second
         public Vector3 localPosition;
@@ -132,6 +137,7 @@ namespace ScaledDecorator
                 IndependentRotation rotationScript = thingy.AddComponent<IndependentRotation>();
                 rotationScript.currentRotation = rotation;
                 rotationScript.rotationDirection = rotationSpeed;
+                rotationScript.tiltParent = tiltRelativeToParent ? cBody : null;
             }
             SetRenderLayer(thingy, 10);
 
@@ -157,14 +163,27 @@ namespace ScaledDecorator
         public Vector3 rotationDirection = Vector3.zero;
         public Vector3 currentRotation = Vector3.zero;
 
+        // The body whose pole this object's rotation is measured against, or null to measure
+        // against the world axes.
+        public CelestialBody tiltParent;
+
         public void Update()
         {
             currentRotation += rotationDirection * Time.deltaTime * TimeWarp.CurrentRate;
-            transform.rotation = Quaternion.Euler(
+
+            transform.rotation = TiltFrame() * Quaternion.Euler(
                 currentRotation.x,
                 currentRotation.y,
                 currentRotation.z
                 );
+        }
+
+        Quaternion TiltFrame()
+        {
+            if (tiltParent == null || tiltParent.bodyTransform == null)
+                return Quaternion.identity;
+
+            return Quaternion.FromToRotation(Vector3.up, tiltParent.bodyTransform.up);
         }
     }
 }
