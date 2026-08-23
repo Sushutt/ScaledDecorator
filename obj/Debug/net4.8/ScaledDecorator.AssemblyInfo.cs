@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScaledDecorator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af52f072f9b4d4c5f2dfdbe3086c8efab39fd11b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5c35aa11659f196d68ba391e53822382f2f0f9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScaledDecorator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScaledDecorator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

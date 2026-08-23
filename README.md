@@ -11,6 +11,7 @@ ScaledDecoratorObject
     prefab = NAMEOFPREFAB // Name of the GameObject you want to load
     parent = Sun // Name of the parent body
     rotatesWithParent = false // Whether or not the prefab rotates with the parent body
+    tiltRelativeToParent = false // Whether an independent rotation is measured from the parent's pole
     rotation = 0,0,0 // Rotation of the prefab
     rotationSpeed = 0,0,0 // Rotation direction of the prefab
     localPosition = 0,0,0 // Position relative to the parent body
@@ -24,10 +25,26 @@ More detailed info:
 | REQUIRED | prefab  | The name of the GameObject within the AssetBundle. This is because AssetBundles load several things (textures, materials, meshes, prefabs) so you have to specify the name of the thing you wish to Instantiate (in this case it should be the name of the prefab)  |
 | REQUIRED | parent  | The name of celestial body that the object is parented to. |
 | true | rotatesWithParent  | If true, rotation will be locked to rotate with the parent planet. Otherwise it will rotate independently. |
+| false | tiltRelativeToParent  | If true, the object's rotation is measured from the parent body's **pole** instead of the world axes |
 | (0,0,0) | rotation  | The initial rotation of the object. If rotatesWithParent is true, then the object will be rotated locally within the parent. Otherwise it will be rotated globally. |
 | (0,0,0) | rotationSpeed  | The degrees per second that the object rotates. Only functions if rotatesWithParent is false. |
 | (0,0,0) | localPosition  | The position relative to the parent body. |
 | (1,1,1) | scale | The scale multiplier, scale should generally be set within the prefab but this can be used if that cannot be done. |
+
+## Which frame is my rotation in?
+
+
+| rotatesWithParent | tiltRelativeToParent | The object's rotation is measured from... |
+| ----------------- | -------------------- | ----------------------------------------- |
+| `true` | *(ignored)* | The parent's full orientation, its pole **and** its spin. The object turns with the planet. |
+| `false` | `false` *(default)* | The world axes. Unchanged from every previous version. |
+| `false` | `true` | The parent's **pole**, but not its spin. |
+
+The third one only matters if you run an axial-tilt mod such as Tilt'Em. Without one every
+planet's pole is the world up axis, so `tiltRelativeToParent` does exactly nothing and is safe
+to leave set to true.
+
+The pole is read off the parent body's own transform, so this works with any tilt mod (or none).
 
 ## Recommended tools:
 ### Unity Explorer: https://github.com/KSPModdingLibs/UnityExplorerKSP/releases
